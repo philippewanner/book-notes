@@ -49,8 +49,20 @@ Mathematically, this can be expressed as follows:
 
 So 3-to-1 odds is equivalent to 0.75 / 0.25 = 3 and log(3) = 0.47712...
 
-### 1.2.3 Five advantages to machine learning
-
-
 If A were a fair coin toss, the odds of heads would be 0.5 / 0.5 = 1. Log(1) = 0. It turns out that the log(Odds) can take on any real-valued number. A log odds value near *-infinity* denotes a highly unlikely event. A value near *infinity* indicates near certainty, and log(1) = 0 indicates an even random change. Using log-odds instead of regular prob- abilities is a mathematical trick that makes certain computations easier, because unlike probabilities, they’re not limited to values between 0 and 1.
+
+### 1.2.3 Five advantages to machine learning
+- *accurate*: ML use data to discover the optimal decision-making engine for your problem. As you collect more data, the accuracy can increase automatically.
+- *automated*: as answers are validated or discarded, the ML model can learn new patterns automatically. This allows users to embed ML directly into an automated workflow.
+- *fast*: ML can generate answers in a matter of milliseconds as new data streams in, allowing systems to react in real time.
+- *customazable*: Many data-driven problems can be addressed with machine learning. ML models are custom built from your own data, and can be configured to optimize whatever metric drives your buisness.
+- *scalable*: ML easily scales to handle increased data rates. Some ML algorithms can scale to handle large amounts of data on many machines in the cloud.
+
+### 1.2.4 Challenges
+- Acquiring data in a usable form. Data scientists spend 80% of their time on data preparation. Extracting useful data from the residue can be tedious and messy work.
+- Formulating the problem so that maching learning can be applied, and will yield a result that's actionable and measurable.
+
+
+## 1.3 Following the ML workflow: from data to deployment
+
 
