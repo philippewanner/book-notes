@@ -1,5 +1,5 @@
-1. What is machine learning?
-============================
+1 What is machine learning?
+=====
 
 ## 1.1 Understand how machines learn
 - When we talk about human learning, we distinguish between memorization, and true intelligence.
