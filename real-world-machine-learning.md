@@ -33,6 +33,10 @@ Imputation | Infer the values of missing input data | Incomplete patient medical
 - Uses historical *training data* to predict the best course of action.
 - Training data consists of the input data, along with the known outcome.
 - Input data consists of a set of *features* - numerical or categorical metrics that capture the relevant aspects of each application, such as credit score, gender, occupation.
+- Historical data (labeled training data) trains the machine-learning model.
+- As new unlabeled data come in, predictions of the probability are generated instantaneously from the application data.
+- ML modeling determines how the input data can be used to best predict the outcome. By finding and using patterns in the training set, ML produces a model that produces a prediction of the outcome based on the unlabeled data.
+- Most traditional statistical business models fall into the category *parametric models*. This models use simple, fixed equations to express the relationship between the outcome and the inputs. Data is then used to learn the best values of the unknown terms in the equation. Approaches such as linear regression, logistic regression, and autoregressive models fit under this category. (See chapter 3)
 
 
 
