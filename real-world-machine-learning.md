@@ -80,4 +80,5 @@ From historical input data you can build a model using an ML algorithm. You then
 - Collecting and preparing data for machine-learning systems usually entails getting the data into tabular format.
 
 ### 1.3.2 Learning a model from data
-- 
+- The first part of building a successful machine-learning system is to ask a question that can be answered by the data.
+- With a Person table (name, age, income, marital status), you could build an ML model to predict whether a person is married or single. The *Marital status* variable is the *target* or *label* and the remaining variables are the *features*. The job of the ML algorithm is to find how the set of input features can successfully predict the target. For people whose marital status is unknown, you can use the model to predict marital status based on the input variables.
