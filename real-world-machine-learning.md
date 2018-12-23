@@ -1,4 +1,4 @@
-# 1 What is machine learning?
+# 1. What is machine learning?
 
 ## 1.1 Understand how machines learn
 - When we talk about human learning, we distinguish between memorization, and true intelligence.
@@ -17,4 +17,4 @@ Recommendation | Predict which alternatives a user would prefer | Product recomm
 Imputation | Infer the values of missing input data | Incomplete patient medical records, missing customer data, census data
 
 ## 1.2 Using data to make decisions
-- a
+- People bring all sorts of conscious and unconscious biases to the decision-making process.
