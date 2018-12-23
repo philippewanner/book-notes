@@ -38,6 +38,8 @@ Imputation | Infer the values of missing input data | Incomplete patient medical
 - ML modeling determines how the input data can be used to best predict the outcome. By finding and using patterns in the training set, ML produces a model that produces a prediction of the outcome based on the unlabeled data.
 - Most traditional statistical business models fall into the category *parametric models*. This models use simple, fixed equations to express the relationship between the outcome and the inputs. Data is then used to learn the best values of the unknown terms in the equation. Approaches such as linear regression, logistic regression, and autoregressive models fit under this category. (See chapter 3)
 - With the log odds, the optimal values of each coefficient of the equation are learned from thousands of training data examples (historical data).
+- Parametric models work well when you have a prior understanding of the relationship between your inputs and the response you're trying to depict. Linear algorithms can be easier to explain and reason about, and they can be faster to compute and scale to larger datasets.
+- In the real world, you're often presented with problems for which such transformations aren't possible to guess. You need more flexible models that can automatically discover complex trends and structure in data without being told what the pattern look like: these are *nonparametric* machine-learning algorithms. Examples of nonparametric algorithms: k-nearest neighbors, kernel smoothing, support vector machines, decision trees, and ensemble methods.
 
 #### Log odds
 The odds ratio is one way of expressing probability. You’ve undoubtedly heard someone say that a (favorite) team’s chance of winning is 3 to 1. Odds are the probability of success (for example, winning) divided by the probability of failure (losing).
@@ -46,6 +48,9 @@ Mathematically, this can be expressed as follows:
 *Odds(A) = P(A) / P(~A) = The probability of A divided by the probability of not A*
 
 So 3-to-1 odds is equivalent to 0.75 / 0.25 = 3 and log(3) = 0.47712...
+
+### 1.2.3 Five advantages to machine learning
+
 
 If A were a fair coin toss, the odds of heads would be 0.5 / 0.5 = 1. Log(1) = 0. It turns out that the log(Odds) can take on any real-valued number. A log odds value near *-infinity* denotes a highly unlikely event. A value near *infinity* indicates near certainty, and log(1) = 0 indicates an even random change. Using log-odds instead of regular prob- abilities is a mathematical trick that makes certain computations easier, because unlike probabilities, they’re not limited to values between 0 and 1.
 
