@@ -76,3 +76,8 @@ From historical input data you can build a model using an ML algorithm. You then
 
 <img src="https://github.com/philippewanner/book-notes/blob/master/real-world-machine-learning-media/figure-1.7.png" width="250">
       
+### 1.3.1 Data collection and preparation
+- Collecting and preparing data for machine-learning systems usually entails getting the data into tabular format.
+
+### 1.3.2 Learning a model from data
+- 
