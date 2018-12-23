@@ -82,3 +82,65 @@ From historical input data you can build a model using an ML algorithm. You then
 ### 1.3.2 Learning a model from data
 - The first part of building a successful machine-learning system is to ask a question that can be answered by the data.
 - With a Person table (name, age, income, marital status), you could build an ML model to predict whether a person is married or single. The *Marital status* variable is the *target* or *label* and the remaining variables are the *features*. The job of the ML algorithm is to find how the set of input features can successfully predict the target. For people whose marital status is unknown, you can use the model to predict marital status based on the input variables.
+
+<img src="https://github.com/philippewanner/book-notes/blob/master/real-world-machine-learning-media/figure-1.9.png" width="250">
+
+- ML algorithm performs the mapping from input features to output data.
+- Some algorithms are relative immune to uninformative features (ex: name feature to predict martial status), see Chap. 3.
+- Valuable information can sometimes be extracted from seemingly uninformative features.
+- Every machine-learning system is about building models and using those to make predictions.
+
+Initial structure of ML workflow program:
+```python
+data = load_data("data/people.csv")
+model = build_model(data, target="Marital status")
+new_data = load_data("data/new_people.csv")
+predictions = model.predict(new_data)
+```
+
+### 1.3.3 Evaluating model performance
+- To validate the performance of the model, you take out some of the data and pretend you don't know the target variable.
+- You then build a model on the remaining data and use the held-out data (testing data) to make predictions.
+
+### 1.3.4 Optimizing model performance
+Use the results of your model evaluation to go back and make the model better. You can achieve better model accuracy in 3 ways:
+1. Tuning the model parameters
+2. Selecting a subset of features
+3. Preprocessing the data
+
+
+## 1.4 Boosting model performance with advanced techniques
+
+### 1.4.1 Data preprocessing and feature engineering
+- Extract additional value from the data that might improve your model performance
+- Specific knowledge goes into deciding the data to collect, and this valuable domain knowledge can also be used to extract value
+from the collected data, in effect *adding to the features* of the model before model building. We call this process *feature engineering*.
+Important examples of features engineering:
+- Dates and times
+- Location
+- Digital media
+
+### 1.4.2 Improving models continually with online methods
+- Most traditional ML models are static or only rarely rebuilt.
+- In many cases, you'll have data and predictions flowing back into the system, and you want the model to improve with time and adapt to changes in the data. Several ML algorithms support this type of *online learning*.
+
+## 1.5 Summary
+- Machine-learning algorithms are distinguished from rule-based systems in that they create their own models based on data. Supervised ML systems generalize by learning from the features of examples with known results.
+- Machine learning is often more accurate, automated, fast, customizable, and scalable than manually constructed rule-based systems.
+- Machine-learning challenges include identifying and formulating problems to which ML can be applied, acquiring and transforming data to make it usable, find- ing the right algorithms for the problem, feature engineering, and overfitting.
+- The basic machine-learning workflow consists of data preparation, model build- ing, model evaluation, optimization, and predictions on new data.
+- Online learning models continually relearn by using the results of their predic- tions to update themselves.
+
+## 1.6 Terms from this chapter
+Word | Definition
+| --- | --- |
+|instance or example|A single object, observation, transaction, or record.|
+|target or label|The numerical or categorical (label) attribute of interest. This is the variable to be predicted for each new instance.|
+|features|The input attributes that are used to predict the target. These also may be numerical or categorical.|
+|model|A mathematical object describing the relationship between the features and the target.|
+|training data| The set of instances with a known target to be used to fit an ML model.|
+|recall|Using a model to predict a target or label.|
+|supervised machine learning|Machine learning in which, given examples for which the output value is known, the training process infers a function that relates input values to the output.|
+|unsupervised machine learning|Machine-learning techniques that don’t rely on labeled examples, but rather try to find hidden structure in unlabeled data.|
+|ML workflow|The stages in the ML process: data preparation, model building, evaluation, optimization, and prediction.|
+|online machine learning|A form of machine learning in which predictions are made, and the model is updated, for each new example.|
