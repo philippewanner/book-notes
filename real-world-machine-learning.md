@@ -75,5 +75,5 @@ Most real-world machine-learning applications require revisiting each step multi
 From historical input data you can build a model using an ML algorithm. You then need to evaluate the performance of the model, and optimize accuracy and scalability to fit your requirements. With the final model, you can make predicitons on new data.
 
 
-        book-notes/figure-1.7.png
+![Workflow](book-notes/figure-1.7.png)
       
