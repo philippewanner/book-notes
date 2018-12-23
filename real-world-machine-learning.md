@@ -17,4 +17,13 @@ Recommendation | Predict which alternatives a user would prefer | Product recomm
 Imputation | Infer the values of missing input data | Incomplete patient medical records, missing customer data, census data
 
 ## 1.2 Using data to make decisions
+### 1.2.1 Traditional approach
 - People bring all sorts of conscious and unconscious biases to the decision-making process.
+- Manually finding effective filters becomes harder and harder - if not impossible - as the filtering system grows in complexity
+- The business rules become so complicated and opaque that debugging them and ripping out old, irrelevant rules becomes virtually impossible.
+- The construction of your rules has no statistical rigor. You're pretty sure that better 'rules' can be found by better exploration of the data, but can't know for sure.
+- As the pattern of loan repayment change over time - perhaps due to changes in the population of applicants - the system doesn't adapt to those changes. To stay up to date, the system needs to be constantly  adjusted.
+==> the sytem doesn't automatically learn from data
+
+### 1.2.2 Machine learning approach
+- 
