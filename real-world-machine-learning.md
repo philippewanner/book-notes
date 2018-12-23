@@ -27,4 +27,13 @@ Imputation | Infer the values of missing input data | Incomplete patient medical
 ==> the sytem doesn't automatically learn from data
 
 ### 1.2.2 Machine learning approach
-- 
+- Completely automated nature of the process
+- Optimal decisions *directly from the data* without having to arbitrary hard-code decision rules.
+- The data provides the foundation for deriving insights about the problem at hand.
+- Uses historical *training data* to predict the best course of action.
+- Training data consists of the input data, along with the known outcome.
+- Input data consists of a set of *features* - numerical or categorical metrics that capture the relevant aspects of each application, such as credit score, gender, occupation.
+
+
+
+
