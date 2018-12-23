@@ -64,5 +64,13 @@ If A were a fair coin toss, the odds of heads would be 0.5 / 0.5 = 1. Log(1) = 0
 
 
 ## 1.3 Following the ML workflow: from data to deployment
-
+The main workflow introduces how to integrate machine-learning models into your applications or data pipelines.
+*ML workflow* has five main components:
+- data preparation
+- model building
+- evalutation
+- optimization
+- predictions on new data
+Most real-world machine-learning applications require revisiting each step multiple times in an iterative process.
+From historical input data you can build a model using an ML algorithm. You then need to evaluate the performance of the model, and optimize accuracy and scalability to fit your requirements. With the final model, you can make predicitons on new data.
 
