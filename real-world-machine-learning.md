@@ -37,6 +37,7 @@ Imputation | Infer the values of missing input data | Incomplete patient medical
 - As new unlabeled data come in, predictions of the probability are generated instantaneously from the application data.
 - ML modeling determines how the input data can be used to best predict the outcome. By finding and using patterns in the training set, ML produces a model that produces a prediction of the outcome based on the unlabeled data.
 - Most traditional statistical business models fall into the category *parametric models*. This models use simple, fixed equations to express the relationship between the outcome and the inputs. Data is then used to learn the best values of the unknown terms in the equation. Approaches such as linear regression, logistic regression, and autoregressive models fit under this category. (See chapter 3)
+- With the log odds, the optimal values of each coefficient of the equation are learned from thousands of training data examples (historical data).
 
 #### Log odds
 The odds ratio is one way of expressing probability. You’ve undoubtedly heard someone say that a (favorite) team’s chance of winning is 3 to 1. Odds are the probability of success (for example, winning) divided by the probability of failure (losing).
